@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class = "paragraph1 bordered " >
+        Иногда можно просто долго долго идти, смотреть по сторонам, слушать музыку в наушниках и забыть о том, что у тебя сел <span class="name">телефон</span> и тебя, возможно, уже потеряли.
+    </div>
+    <div class="paragraph2 bordered " >
+        Я стоял на остановке и неожиданно воспринял этот <span class = "name">'мир'</span> как-то иначе. Я представил, как кто-то строил эти дома и дороги, а теперь они есть для нас, представил, как раньше выглядили эти улицы и какие люди ходили по ним. И даже воздух вдруг стал <span class="adjective bordered">другим</span>. В этот момент я начал испытывать симпатию к этому городу. Плевать на <span class="adjective bordered">огромное</span> количество машин. Город, он не виноват.
+    </div>
+    <div class = "paragraph3 bordered " >
+        Однажды я прочитал статью о том, как один <span class = "name">поэт</span> просто от скуки написал <span class="adjective bordered">весёленькое </span>стихотворение. Его опубликовали, а через пару месяцев читатели начали находить в этом стихотворении <span class="adjective bordered">глубокий </span> смысл. Поэт кричал: Люди! Там нет смысла! , а люди отвечали: Нет, поэт! Там есть смысл! Мы знаем это! <span class="adjective bordered">Великий </span> смысл.
+        Внимание вопрос. Зачем в школе мы пишем сочинения, в которых анализируем чьи-то стихи?
+    </div>
+
+    <style>
+        .adjective {
+            background: blueviolet;
+            transition: all 0.3s;
+        }
+        .bordered{
+            margin: 8px;  
+            padding: 8px 16px;
+        }
+        .bordered.adjective{
+            border: 2px solid black;
+            display: inline-block;
+            margin: 2px; 
+            padding: 0 4px; 
+            border-radius: 8px; 
+        }
+        .adjective:hover {
+            background: skyblue;
+            cursor: pointer;
+        }
+        .paragraph1{
+            text-align:center;
+            background: magenta;
+        }
+        .paragraph2{
+            text-align:right; 
+            width: 500px;
+            background:rgb(201, 214, 22)
+        }
+        .paragraph3{
+            text-align:left; 
+            width: 50%;
+            background: linear-gradient(130deg, blue, red)
+        }
+        .name{
+            display: inline-block; 
+            padding: 8px; 
+            background: red;
+            
+        }
+        .paragraph1.bordered{
+            border: 1px solid black;
+        }
+        .paragraph2.bordered{
+            border: 5px solid green;
+        }
+        .paragraph3.bordered{
+            border: 3px solid blue;
+        }
+        .paragraph2:hover .adjective{
+            background:blue
+        }
+        .paragraph2 .adjective:hover{
+            background: white
+        }
+        .paragraph3:hover .adjective{
+            background:yellow
+        }
+        .paragraph3 .adjective:hover{
+            background: lightgreen
+        }
+        
+    </style>
+</body>
+
+</html>
